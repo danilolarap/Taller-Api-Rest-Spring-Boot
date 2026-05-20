@@ -1,0 +1,46 @@
+## PRUEBA 0
+POST http://localhost:8080/api/libros
+Content-Type: application/json
+
+{
+  "title": "Clean Code",
+  "author": "Robert C. Martin",
+  "isbn": "978-0132350884"
+}
+
+## PRUEBA 1
+POST http://localhost:8080/api/usuarios
+Content-Type: application/json
+
+{
+  "name": "Danilo",
+  "email": "danilo@correo.com",
+  "role": "Estudiante"
+}
+
+## PRUEBA 2
+POST http://localhost:8080/api/ejemplares
+Content-Type: application/json
+
+{
+  "bookId": "6a0d46c0575f9c4ca1078292",
+  "copyCode": "CP-CLEANCODE-07",
+  "status": "DISPONIBLE",
+  "location": "Estante A-4"
+}
+
+## PRUEBA 3
+POST http://localhost:8080/api/prestamos
+Content-Type: application/json
+
+{
+  "userId": "6a0d479e575f9c4ca1078295",
+  "copyId": "6a0d4943575f9c4ca1078296",
+  "expectedReturnDate": "2026-06-20"
+}
+
+## PRUEBA 4
+GET http://localhost:8080/api/prestamos
+
+## PRUEBA 5
+POST http://localhost:8080/api/prestamos/return/6a0d4959575f9c4ca1078297
